@@ -7,11 +7,11 @@
 </head>
 <body>
     <nav>
-        <a href="Home">Home</a>
-        <a href="About me">About</a>
-        <a href="d2">skills</a>
-        <a href="project">project</a>
-        <a href="contact">contact</a>
+        <a href="#Home">Home</a>
+        <a href="#Aboutme">About</a>
+        <a href="#d2">skills</a>
+        <a href="#project">project</a>
+        <a href="#contact">contact</a>
     </nav>
     <div class="d1" id="Home">
         <br><br><br><br>
@@ -19,7 +19,7 @@
         <h1>Hello, I am Dhanush</h1>
         <h1>From Harihar</h1>
     </div>
-    <div class="About Me" id="About me">
+    <div class="About Me" id="Aboutme">
 <h1>About Me</h1>
 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus voluptates harum laudantium inventore, aperiam error minus. Ducimus quaerat laudantium officia, dolore consectetur vero quisquam optio necessitatibus, debitis, ipsa quibusdam molestias!</p>
 <br>
@@ -102,7 +102,30 @@
     
     <h3>9008495441</h3>
     
-    <h3>harihar</h3><br>
+    <h3>harihar</h3>
+    <form action="mailto:dhanushkumar90084@gmail.com">
+        <table>
+            <tr>
+                <td>
+                    <label for="username">Name</label>
+                </td>
+                <td><input type="text" name="subject" placeholder="username"></td>
+            </tr>
+            <tr>
+                <td><label for="number">phone number</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>message</label></td>
+                <td><textarea name="body"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit">send</button></td>
+            </tr>
+        </table>
+
+    </form>
 </div>
 </body>
 </html>
@@ -116,7 +139,8 @@
     }
 .d1{
 
-    background-color:beige;
+    background-color:
+    beige;
     height: 100vh;
     background-image: url('rama.png');
     background-repeat: no-repeat;
@@ -170,7 +194,22 @@ a{
     font-size: 25px;
     padding: 10px 25px;
 }
-.contact{
-    text-align: center;
+.contact table{
+    margin: auto;
+    background-color: blueviolet;
+    text-align:left;
+}
+.contact button{
+    padding: 10px 30px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+}
+.contact button:hover{
+    background-color: mediumvioletred;
+    color: blue;
+}
+@media( max-width: 600px){
+    .first
 }
 </style>
